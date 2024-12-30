@@ -1,0 +1,8 @@
+1）corners：存储标定板检测到有效的角点绘制图像
+2）correct：存储矫正后的图像
+3）temp：用于相机标定的样本图像
+5）valid：有效的标定数据（后续矫正图像使用到）
+6）assessment.txt ：标定的评价结果
+7）calibration.xml ：相机标定参数
+8）checkerboard.png ：棋盘格图片
+确保标定无误后，可将valid文件夹下的calibration.xml文件更新

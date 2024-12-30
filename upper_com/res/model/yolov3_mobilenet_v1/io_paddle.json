@@ -1,0 +1,83 @@
+[
+    {
+        "type": "INPUT",
+        "name": "image",
+        "shape": [
+            1,
+            3,
+            320,
+            320
+        ],
+        "layout": "NCHW",
+        "dtype": "float32"
+    },
+    {
+        "type": "OUTPUT",
+        "name": "conv2d_84.tmp_1",
+        "shape": [
+            1,
+            54,
+            10,
+            10
+        ],
+        "dtype": "float32"
+    },
+    {
+        "type": "OUTPUT",
+        "name": "conv2d_85.tmp_1",
+        "shape": [
+            1,
+            54,
+            20,
+            20
+        ],
+        "dtype": "float32"
+    },
+    {
+        "type": "OUTPUT",
+        "name": "conv2d_86.tmp_1",
+        "shape": [
+            1,
+            54,
+            40,
+            40
+        ],
+        "dtype": "float32"
+    },
+    {
+        "type": "nms_in",
+        "name": "bboxes",
+        "shape": [
+            1,
+            6300,
+            4
+        ]
+    },
+    {
+        "type": "nms_in",
+        "name": "scores",
+        "shape": [
+            1,
+            13,
+            6300
+        ]
+    },
+    {
+        "type": "post_out",
+        "name": "concat_1.tmp_0",
+        "shape": [
+            1,
+            6300,
+            4
+        ]
+    },
+    {
+        "type": "post_out",
+        "name": "concat_0.tmp_0",
+        "shape": [
+            1,
+            13,
+            6300
+        ]
+    }
+]
